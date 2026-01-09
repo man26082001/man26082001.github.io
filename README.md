@@ -1,1 +1,1 @@
-# man26082001.github.io
+# man.github.io
