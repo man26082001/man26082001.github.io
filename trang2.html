@@ -18,75 +18,63 @@
         .container {
             text-align: center;
             width: 95%;
-            max-width: 1000px; /* Tăng chiều rộng để đủ chỗ cho 2 cột */
+            max-width: 1100px;
             background: rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 20px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        /* CHIA THÀNH 2 CỘT NẰM NGANG */
         .content-box {
             display: flex;
-            flex-direction: row; /* CHỈNH LẠI: Nằm ngang thay vì cột dọc */
+            flex-direction: row; 
             gap: 20px; 
             margin: 25px 0;
             text-align: justify;
         }
-
-        .row {
-            flex: 1; /* Giúp 2 cột có độ rộng bằng nhau */
+        .column {
+            flex: 1; 
             background: rgba(255, 255, 255, 0.05);
             padding: 20px;
             border-radius: 15px;
-            border-top: 5px solid #fdbb2d; /* Chuyển viền lên trên cho đẹp */
+            border-top: 5px solid #fdbb2d;
         }
-
-        .row-en { 
+        .col-en { 
             border-top: 5px solid #00d2ff; 
             font-style: italic; 
         }
-
         h3 { color: #fdbb2d; margin-top: 0; text-align: center; }
-        .row-en h3 { color: #00d2ff; }
-
+        .col-en h3 { color: #00d2ff; }
         .back-btn { 
             display: inline-block;
             color: #fdbb2d; 
             text-decoration: none; 
             border: 2px solid #fdbb2d; 
-            padding: 10px 25px; 
+            padding: 12px 30px; 
             border-radius: 30px; 
             font-weight: bold;
             transition: 0.3s;
         }
-        .back-btn:hover { background: #fdbb2d; color: #000; }
-
-        /* Hỗ trợ điện thoại: Tự động chuyển về hàng dọc khi màn hình nhỏ */
+        .back-btn:hover { background: #fdbb2d; color: #000; transform: scale(1.05); }
         @media (max-width: 768px) {
-            .content-box {
-                flex-direction: column;
-            }
+            .content-box { flex-direction: column; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Thông tin về Mẫn</h1>
-
+        <h1>THÔNG TIN CHI TIẾT</h1>
         <div class="content-box">
-            <div class="row">
-                <h3>🇻🇳 Tiếng Việt</h3>
-                <p>Tôi là Phan Triệu Mẫn, giới tính: Nam, sinh ngày 26/08/2001, hiện đang sinh sống tại Quảng Ngãi. Tôi đang học tập và phát triển trong lĩnh vực Công nghệ Thông tin, đặc biệt quan tâm đến giáo dục tin học. Trong quá trình học tập, tôi chú trọng tiếp thu kiến thức chuyên môn về lập trình và ứng dụng công nghệ vào giảng dạy.</p>
+            <div class="column">
+                <h3>🇻🇳 TIẾNG VIỆT</h3>
+                <p>Tôi là Phan Triệu Mẫn, giới tính: Nam, sinh ngày 26/08/2001, hiện đang sinh sống tại Quảng Ngãi. Tôi đang học tập và phát triển trong lĩnh vực Công nghệ Thông tin, đặc biệt quan tâm đến giáo dục tin học. Trong quá trình học tập, tôi không chỉ chú trọng tiếp thu kiến thức chuyên môn về lập trình, cơ sở dữ liệu và hệ thống thông tin mà còn quan tâm đến việc ứng dụng công nghệ vào giảng dạy và học tập tin học. Tôi có mong muốn góp phần nâng cao chất lượng giáo dục tin học thông qua việc truyền đạt kiến thức một cách dễ hiểu, thực tiễn và phù hợp với người học.</p>
             </div>
-
-            <div class="row row-en">
-                <h3>🇺🇸 English</h3>
-                <p>My name is Phan Trieu Man, male, born on August 26, 2001, and currently living in Quang Ngai, Vietnam. I am studying and developing my career in the field of Information Technology, with a particular interest in Computer Science Education. I always strive to combine technology with modern teaching methods.</p>
+            <div class="column col-en">
+                <h3>🇺🇸 ENGLISH</h3>
+                <p>My name is Phan Trieu Man, male, born on August 26, 2001, and currently living in Quang Ngai, Vietnam. I am studying and developing my career in the field of Information Technology, with a particular interest in Computer Science Education. During my academic journey, I have gained fundamental knowledge in programming, databases, and information systems. I am especially interested in applying information technology to teaching and learning, with the goal of making computer science knowledge more accessible, practical, and easy to understand for learners.</p>
             </div>
         </div>
-
         <a href="index.html" class="back-btn">Quay lại trang chủ</a>
     </div>
 </body>
+</html>
