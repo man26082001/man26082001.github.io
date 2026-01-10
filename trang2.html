@@ -22,68 +22,53 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 30px;
             border-radius: 20px;
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        /* Cấu trúc chia 2 hàng */
         .content-box {
             display: flex;
-            flex-direction: column; /* Buộc xếp chồng VN trên, EN dưới */
-            gap: 25px; 
-            margin: 30px 0;
-            text-align: left;
+            flex-direction: column; /* Quan trọng: Ép nội dung xuống hàng */
+            gap: 20px; 
+            margin: 25px 0;
+            text-align: justify;
         }
         .row {
-            background: rgba(255, 255, 255, 0.07);
+            background: rgba(255, 255, 255, 0.05);
             padding: 20px;
             border-radius: 15px;
-            border-left: 6px solid #fdbb2d; /* Thanh vàng cho Tiếng Việt */
+            border-left: 5px solid #fdbb2d;
         }
         .row-en { 
-            border-left: 6px solid #00d2ff; /* Thanh xanh cho Tiếng Anh */
+            border-left: 5px solid #00d2ff; 
+            font-style: italic; 
         }
-        h2 { color: #fdbb2d; margin: 0 0 10px 0; font-size: 1.2rem; }
-        .row-en h2 { color: #00d2ff; }
-        p { line-height: 1.7; margin: 0; font-size: 0.95rem; }
-        
+        h1, h3 { color: #fdbb2d; margin-top: 0; }
         .back-btn { 
             display: inline-block;
             color: #fdbb2d; 
             text-decoration: none; 
             border: 2px solid #fdbb2d; 
-            padding: 12px 30px; 
+            padding: 10px 25px; 
             border-radius: 30px; 
             font-weight: bold;
             transition: 0.3s;
         }
-        .back-btn:hover { background: #fdbb2d; color: #000; transform: translateY(-3px); }
+        .back-btn:hover { background: #fdbb2d; color: #000; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="color: #fdbb2d;">Thông tin về Mẫn</h1>
+        <h1>Thông tin về Mẫn</h1>
 
         <div class="content-box">
             <div class="row">
-                <h2>VN Tiếng Việt</h2>
-                <p>Tôi là Phan Triệu Mẫn, giới tính: Nam, sinh ngày 26/08/2001, hiện đang sinh sống tại Quảng Ngãi. Tôi đang học tập và phát triển trong lĩnh vực Công nghệ Thông tin, đặc biệt quan tâm đến giáo dục tin học.
-
-Trong quá trình học tập, tôi không chỉ chú trọng tiếp thu kiến thức chuyên môn về lập trình, cơ sở dữ liệu và hệ thống thông tin mà còn quan tâm đến việc ứng dụng công nghệ vào giảng dạy và học tập tin học. Tôi có mong muốn góp phần nâng cao chất lượng giáo dục tin học thông qua việc truyền đạt kiến thức một cách dễ hiểu, thực tiễn và phù hợp với người học.
-
-Bên cạnh đó, tôi luôn rèn luyện kỹ năng sư phạm, khả năng trình bày, hướng dẫn và hỗ trợ người học tiếp cận công nghệ thông tin một cách hiệu quả. Tôi tin rằng giáo dục tin học đóng vai trò quan trọng trong việc hình thành tư duy logic, kỹ năng số và năng lực sáng tạo cho thế hệ trẻ.
-
-Với định hướng lâu dài, tôi mong muốn phát triển bản thân trong lĩnh vực giáo dục tin học, kết hợp giữa kiến thức công nghệ và phương pháp giảng dạy hiện đại, nhằm đóng góp tích cực cho sự phát triển của giáo dục và xã hội.</p>
+                <h3>VN Tiếng Việt</h3>
+                <p>Tôi là Phan Triệu Mẫn, giới tính: Nam, sinh ngày 26/08/2001, hiện đang sinh sống tại Quảng Ngãi. Tôi đang học tập và phát triển trong lĩnh vực Công nghệ Thông tin, đặc biệt quan tâm đến giáo dục tin học. Trong quá trình học tập, tôi chú trọng tiếp thu kiến thức chuyên môn về lập trình và ứng dụng công nghệ vào giảng dạy.</p>
             </div>
 
             <div class="row row-en">
-                <h2>US English</h2>
-                <p>My name is Phan Trieu Man, male, born on August 26, 2001, and currently living in Quang Ngai, Vietnam. I am studying and developing my career in the field of Information Technology, with a particular interest in Computer Science Education.
-
-During my academic journey, I have gained fundamental knowledge in programming, databases, and information systems. I am especially interested in applying information technology to teaching and learning, with the goal of making computer science knowledge more accessible, practical, and easy to understand for learners.
-
-In addition to technical knowledge, I continuously work on improving my communication, presentation, and instructional skills. I believe that computer science education plays an important role in developing logical thinking, digital skills, and creativity in today’s learners.
-
-With a long-term orientation, I aspire to grow professionally in computer science education, combining technological expertise with effective teaching methods to contribute positively to education and society.</p>
+                <h3>US English</h3>
+                <p>My name is Phan Trieu Man, male, born on August 26, 2001, and currently living in Quang Ngai, Vietnam. I am studying and developing my career in the field of Information Technology, with a particular interest in Computer Science Education. I always strive to combine technology with modern teaching methods.</p>
             </div>
         </div>
 
