@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ năng & Dự án - Mẫn</title>
+    <style>
+        body { 
+            background: #1a2a6c; 
+            color: white; 
+            font-family: 'Segoe UI', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        .container {
+            text-align: center;
+            width: 95%;
+            max-width: 1100px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .content-box {
+            display: flex;
+            flex-direction: row; 
+            gap: 20px; 
+            margin: 25px 0;
+            text-align: left;
+        }
+        .column {
+            flex: 1; 
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            border-top: 5px solid #fdbb2d;
+        }
+        .col-right { 
+            border-top: 5px solid #00d2ff; 
+        }
+        h3 { color: #fdbb2d; margin-top: 0; text-align: center; }
+        .col-right h3 { color: #00d2ff; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .btn { 
+            display: inline-block;
+            color: #fdbb2d; 
+            text-decoration: none; 
+            border: 2px solid #fdbb2d; 
+            padding: 10px 25px; 
+            border-radius: 30px; 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #fdbb2d; color: #000; transform: scale(1.05); }
+        .btn-blue { color: #00d2ff; border-color: #00d2ff; }
+        .btn-blue:hover { background: #00d2ff; color: #000; }
+        @media (max-width: 768px) {
+            .content-box { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KỸ NĂNG & DỰ ÁN</h1>
+        <div class="content-box">
+            <div class="column">
+                <h3>🛠 Kỹ năng công nghệ</h3>
+                <ul>
+                    <li>Lập trình Web (HTML, CSS, JavaScript)</li>
+                    <li>Quản trị cơ sở dữ liệu (SQL Server, MySQL)</li>
+                    <li>Tin học văn phòng nâng cao</li>
+                    <li>Kỹ năng sư phạm & truyền đạt</li>
+                </ul>
+            </div>
+            <div class="column col-right">
+                <h3>🚀 Dự án cá nhân</h3>
+                <ul>
+                    <li>Xây dựng Website giới thiệu bản thân</li>
+                    <li>Thiết kế bài giảng Tin học trực tuyến</li>
+                    <li>Phát triển ứng dụng quản lý học tập nhỏ</li>
+                    <li>Nghiên cứu ứng dụng AI trong giáo dục</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="trang2.html" class="btn">Quay lại trang 2</a>
+            <a href="index.html" class="btn btn-blue">Về trang chủ</a>
+        </div>
+    </div>
+</body>
+</html>
